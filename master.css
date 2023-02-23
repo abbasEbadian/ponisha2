@@ -2891,7 +2891,7 @@ h4 {
     }
     .land-see-hero-title {
         font-weight: 600;
-        font-size: 2.8125rem
+        font-size: 1.4rem
     }
     .land-see-hero-caption {
         width: auto
@@ -3218,4 +3218,60 @@ h4 {
     padding-left: 20%;
     font-size: 0.85rem;
     overflow: auto;
+}
+.cover.land-see-hero-image.land-see-cover-position-top{
+    position: absolute; 
+    inset: 0;
+    object-fit: cover;
+}
+
+
+
+#new-carousel-1 {
+    max-width: 1290px;
+    margin-inline: auto;
+    min-height: 500px;
+}
+#new-carousel-1 .carousel-inner{
+
+}
+#new-carousel-1 .carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    background-position: top;
+    object-position: top;
+    min-height: 680px;
+}
+[class^=carousel-control]{
+    background: #5555;
+    padding: 24px;
+    display: grid;
+    place-items:center;
+    color: #555;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    #new-carousel-1 {
+        min-height: 200px;
+    }
+    body #new-carousel-1 .carousel-item img{
+        max-height: 300px;
+        min-height: 30px;
+    }
+    #new-carousel-1 .land-see-hero-button {
+        padding-block: 4px;
+    }
+    #new-carousel-1 .land-see-hero-typography{
+        bottom: 8px;
+        width: 80%;
+        left: 10%;
+        transform: scale(0.7);
+        margin-inline: auto;
+        color: white;
+        background-color: #fff8;
+        padding: 8px;
+        border-radius: 6px;
+    }   
+
 }
