@@ -3208,3 +3208,9 @@ h4 {
         order: 3
     }
 }
+
+.land-see-stories .land-see-post-title {
+    padding-left: 20%;
+    font-size: 0.85rem;
+    overflow: auto;
+}
