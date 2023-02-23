@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async="" src="./lib/amp.js"></script>
     <link rel="stylesheet" href="./master.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <style amp-boilerplate="">
         
@@ -438,8 +439,7 @@
     </amp-analytics>
     <!-- Start Navbar -->
     <header class="ampstart-headerbar  justify-start items-center top-0 left-0 right-0">
-        <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0"
-            class="ampstart-navbar-trigger pr2 pl2 fixed z4 align-middle" style="background: #fff;">☰</div>
+        <div class="btn btn-primary text-dark border-0 position-fixed top-0 right-0 p-3 bg-white" data-bs-toggle="offcanvas" href="#header-sidebar" role="button" aria-controls="header-sidebar" style="background: #fff;">☰</div>
         <a href="https://allwomenstalk.com/" title="All Women's Talk"
             class="text-decoration-none mx-auto ampstart-headerbar-home-link">
             <div class="ampstart-headerbar-title ml2">
@@ -796,27 +796,7 @@
             </amp-carousel>
         </div>
     </section>
-    <amp-analytics type="googleanalytics">
-        <script type="application/json">
- {
- "vars": {
- "account": "UA-17514583-34"
- },
- "triggers": {
- "onClickNavigatio": {
- "on": "click",
- "request": "event",
- "selector": "[data-vars-event-action-stories]",
- "vars": {
- "eventCategory": "Reel Stories",
- "eventAction": "${eventActionStories}",
- "eventLabel": "${outboundLink}"
- }
- }
- }
- }
- </script>
-    </amp-analytics>
+
     <section class="land-see-recent-content relative mx-auto py4">
         <h4 class="land-see-section-header ml1">ریل ها</h4>
     </section>
@@ -1221,222 +1201,219 @@
         </amp-accordion>
     </section>
     <!-- Start Sidebar -->
-    <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3" layout="nodisplay">
-        <div class="flex justify-start items-center ampstart-sidebar-header">
-            <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0"
-                class="ampstart-navbar-trigger items-start">✕</div>
-        </div>
-        <nav class="ampstart-sidebar-nav ampstart-nav">
-            <ul class="list-reset m0 p0 ampstart-label">
-                <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a
-                        class="ampstart-nav-link" href="https://allwomenstalk.com/">داستان ها</a></li>
-                <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
-                    <!-- Start Dropdown-inline -->
-                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                        <section expanded="">
-                            <header>همه</header>
-                            <ul class="ampstart-dropdown-items list-reset m0 p0">
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://love.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="love" class="text-decoration-none">عاشقانه</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://hair.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="hair" class="text-decoration-none">مو</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://makeup.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="makeup" class="text-decoration-none">آرایشی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://beauty.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="beauty" class="text-decoration-none">زیبایی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://skincare.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="skincare" class="text-decoration-none">مراقبت پوست</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://weightloss.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="weightloss"
-                                        class="text-decoration-none">کاهش وزن</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://fashion.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="fashion" class="text-decoration-none">مد</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://lifestyle.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="lifestyle"
-                                        class="text-decoration-none">سبک زندگی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://health.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="health" class="text-decoration-none">سلامتی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://fitness.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="fitness" class="text-decoration-none">تناسب اندام</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://diy.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="diy" class="text-decoration-none">DIY</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://inspiration.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="inspiration"
-                                        class="text-decoration-none">الهام بخش</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://food.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="food" class="text-decoration-none">غذا</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://diet.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="diet" class="text-decoration-none">رژیم غذایی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://funny.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="funny" class="text-decoration-none">بامزه</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://music.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="music" class="text-decoration-none">موسیقی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://cooking.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="cooking" class="text-decoration-none">آشپزی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://nails.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="nails" class="text-decoration-none">ناخن</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://apps.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="apps" class="text-decoration-none">برنامه ها</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://money.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="money" class="text-decoration-none">پول</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://travel.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="travel" class="text-decoration-none">سفر</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://shoes.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="shoes" class="text-decoration-none">کفش</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://movies.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="movies" class="text-decoration-none">فیلم</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://books.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="books" class="text-decoration-none">کتاب</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://streetstyle.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="streetstyle"
-                                        class="text-decoration-none">سبک خیابانی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://bags.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="bags" class="text-decoration-none">کیف</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://celebs.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="celebs" class="text-decoration-none">سلبریتی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://running.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="running" class="text-decoration-none">ورزش</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://perfumes.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="perfumes" class="text-decoration-none">عطر</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://jewelry.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="jewelry" class="text-decoration-none">جواهرات</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://wedding.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="wedding" class="text-decoration-none">عروسی</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://parenting.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="parenting"
-                                        class="text-decoration-none">سرپرست</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://gardening.allwomenstalk.com/"
-                                        data-vars-event-action="Menu category" data-vars-outbound-link="gardening"
-                                        class="text-decoration-none">باغچه</a>
-                                </li>
-                                <li class="ampstart-dropdown-item">
-                                    <a href="https://teen.allwomenstalk.com/" data-vars-event-action="Menu category"
-                                        data-vars-outbound-link="teen" class="text-decoration-none">نوجوان</a>
-                                </li>
-                            </ul>
-                        </section>
-                    </amp-accordion>
-                    <!-- End Dropdown-inline -->
+    <div id="header-sidebar" class="px3 offcanvas offcanvas-end" >
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="header-sidebar">داستان ها</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        
+        <div class="offcanvas-body">
+            <nav class="ampstart-sidebar-nav ampstart-nav">
+                <ul class="list-reset m0 p0 ampstart-label">
+                    <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
+                        <!-- Start Dropdown-inline -->
+                        <ul class="ampstart-dropdown-items list-reset m0 p0">
+                            
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://love.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="love" class="text-decoration-none">عاشقانه</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://hair.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="hair" class="text-decoration-none">مو</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://makeup.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="makeup" class="text-decoration-none">آرایشی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://beauty.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="beauty" class="text-decoration-none">زیبایی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://skincare.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="skincare" class="text-decoration-none">مراقبت پوست</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://weightloss.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="weightloss"
+                                    class="text-decoration-none">کاهش وزن</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://fashion.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="fashion" class="text-decoration-none">مد</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://lifestyle.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="lifestyle"
+                                    class="text-decoration-none">سبک زندگی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://health.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="health" class="text-decoration-none">سلامتی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://fitness.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="fitness" class="text-decoration-none">تناسب اندام</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://diy.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="diy" class="text-decoration-none">DIY</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://inspiration.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="inspiration"
+                                    class="text-decoration-none">الهام بخش</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://food.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="food" class="text-decoration-none">غذا</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://diet.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="diet" class="text-decoration-none">رژیم غذایی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://funny.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="funny" class="text-decoration-none">بامزه</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://music.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="music" class="text-decoration-none">موسیقی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://cooking.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="cooking" class="text-decoration-none">آشپزی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://nails.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="nails" class="text-decoration-none">ناخن</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://apps.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="apps" class="text-decoration-none">برنامه ها</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://money.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="money" class="text-decoration-none">پول</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://travel.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="travel" class="text-decoration-none">سفر</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://shoes.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="shoes" class="text-decoration-none">کفش</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://movies.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="movies" class="text-decoration-none">فیلم</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://books.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="books" class="text-decoration-none">کتاب</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://streetstyle.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="streetstyle"
+                                    class="text-decoration-none">سبک خیابانی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://bags.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="bags" class="text-decoration-none">کیف</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://celebs.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="celebs" class="text-decoration-none">سلبریتی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://running.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="running" class="text-decoration-none">ورزش</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://perfumes.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="perfumes" class="text-decoration-none">عطر</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://jewelry.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="jewelry" class="text-decoration-none">جواهرات</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://wedding.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="wedding" class="text-decoration-none">عروسی</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://parenting.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="parenting"
+                                    class="text-decoration-none">سرپرست</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://gardening.allwomenstalk.com/"
+                                    data-vars-event-action="Menu category" data-vars-outbound-link="gardening"
+                                    class="text-decoration-none">باغچه</a>
+                            </li>
+                            <li class="ampstart-dropdown-item">
+                                <a href="https://teen.allwomenstalk.com/" data-vars-event-action="Menu category"
+                                    data-vars-outbound-link="teen" class="text-decoration-none">نوجوان</a>
+                            </li>
+                        </ul>
+                        <!-- End Dropdown-inline -->
+                    </li>
+                </ul>
+            </nav>
+            <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+                <li>
+                    <a href="https://twitter.com/allwomenstalk" target="_blank" class="inline-block p1"
+                        aria-label="Link to AMP HTML Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49">
+                            <title>Twitter</title>
+                            <path
+                                d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6"
+                                class="ampstart-icon ampstart-icon-twitter"></path>
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Allwomenstalk" target="_blank" class="inline-block p1"
+                        aria-label="Link Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6"
+                            viewbox="0 0 56 55">
+                            <title>Facebook</title>
+                            <path
+                                d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43"
+                                class="ampstart-icon ampstart-icon-fb"></path>
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/allwomenstalk/" target="_blank" class="inline-block p1"
+                        aria-label="Link Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewbox="0 0 54 54">
+                            <title>instagram</title>
+                            <path
+                                d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z"
+                                class="ampstart-icon ampstart-icon-instagram"></path>
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com/allwomenstalk/" target="_blank" class="inline-block p1"
+                        aria-label="Link Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28.5"
+                            viewbox="0 0 43 51">
+                            <title>pinterest</title>
+                            <path
+                                d="M8.134 18.748c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4-.2 1.3-.7 2.6-1.2 3.8-.6 1.2-1.3 2.3-2.2 3.2-.8.9-1.8 1.7-3.1 2.2-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1-.6 1.8-.9 3.1-.9 4 0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z"
+                                class="ampstart-icon ampstart-icon-pinterest"></path>
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://t.me/allwmn" target="_blank" class="inline-block p1" aria-label="Link Telegram"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 496 512">
+                            <title>Telegram</title>
+                            <path
+                                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
+                                class="ampstart-icon ampstart-icon-telegram"></path>
+                        </svg></a>
                 </li>
             </ul>
-        </nav>
-        <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
-            <li>
-                <a href="https://twitter.com/allwomenstalk" target="_blank" class="inline-block p1"
-                    aria-label="Link to AMP HTML Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49">
-                        <title>Twitter</title>
-                        <path
-                            d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6"
-                            class="ampstart-icon ampstart-icon-twitter"></path>
-                    </svg></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/Allwomenstalk" target="_blank" class="inline-block p1"
-                    aria-label="Link Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6"
-                        viewbox="0 0 56 55">
-                        <title>Facebook</title>
-                        <path
-                            d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43"
-                            class="ampstart-icon ampstart-icon-fb"></path>
-                    </svg></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/allwomenstalk/" target="_blank" class="inline-block p1"
-                    aria-label="Link Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewbox="0 0 54 54">
-                        <title>instagram</title>
-                        <path
-                            d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z"
-                            class="ampstart-icon ampstart-icon-instagram"></path>
-                    </svg></a>
-            </li>
-            <li>
-                <a href="https://www.pinterest.com/allwomenstalk/" target="_blank" class="inline-block p1"
-                    aria-label="Link Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28.5"
-                        viewbox="0 0 43 51">
-                        <title>pinterest</title>
-                        <path
-                            d="M8.134 18.748c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4-.2 1.3-.7 2.6-1.2 3.8-.6 1.2-1.3 2.3-2.2 3.2-.8.9-1.8 1.7-3.1 2.2-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1-.6 1.8-.9 3.1-.9 4 0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z"
-                            class="ampstart-icon ampstart-icon-pinterest"></path>
-                    </svg></a>
-            </li>
-            <li>
-                <a href="https://t.me/allwmn" target="_blank" class="inline-block p1" aria-label="Link Telegram"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 496 512">
-                        <title>Telegram</title>
-                        <path
-                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
-                            class="ampstart-icon ampstart-icon-telegram"></path>
-                    </svg></a>
-            </li>
-        </ul>
-    </amp-sidebar>
+        </div>
+    </div>
     <!-- End Sidebar -->
     <amp-lightbox id="search-overlay" layout="nodisplay">
         <div class="search-overlay">
@@ -1555,6 +1532,7 @@
         </small>
     </footer>
     <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>

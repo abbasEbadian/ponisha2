@@ -22,7 +22,9 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-
+body a{
+    color: inherit;
+}
 body {
     margin: 0
 }
@@ -1599,7 +1601,8 @@ a:visited {
 .ampstart-dropdown-item {
     background-color: #fff;
     color: #808992;
-    opacity: .9
+    opacity: .9;
+    text-align: start;
 }
 
 .ampstart-dropdown-item:active,
@@ -2291,6 +2294,9 @@ h4 {
 .ampstart-nav-dropdown .ampstart-dropdown-item,
 .ampstart-nav-dropdown amp-accordion ul,
 .ampstart-sidebar {
+    background-color: #fef4f2
+}
+#header-sidebar{
     background-color: #fef4f2
 }
 
@@ -3053,7 +3059,7 @@ h4 {
 .land-see-blockquote p,
 .land-see-story-detail .land-see-hero-caption,
 .land-see-story-detail .land-see-hero-title {
-    color: #021425
+    color: #021425;
 }
 
 .land-see-story-detail .land-see-hero-caption {
