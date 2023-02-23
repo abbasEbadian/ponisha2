@@ -2585,7 +2585,6 @@ h4 {
 }
 
 .land-see-pre-animate {
-    opacity: 1;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px)
 }
