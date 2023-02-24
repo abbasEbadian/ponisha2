@@ -3275,3 +3275,42 @@ h4 {
     }   
 
 }
+#storyModal .carousel-indicators{
+    bottom: unset;
+    top: 0;
+    margin-inline: 0%;
+    width: 100%;
+}
+#storyModal #carouselExampleIndicators{
+    padding-top: 16px;
+}
+
+#storyModal .carousel-indicators button{
+    flex: 1 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding-block: 1px;
+    background: dodgerblue;
+}
+#storyModal .carousel-indicators button.active ~ *{
+    background: transparent !important;
+}   
+#storyModal .carousel-item img{
+    height: 600px;
+    object-fit: cover;
+    width: 400px;
+    margin-inline: auto;
+}
+
+#storyModal [class^=carousel-control] {
+    opacity: 1;
+}
+#storyModal [class^=carousel-control] span{
+    filter: invert(1);
+    border-radius: 600px;
+    padding: 20px;
+    background-size: 30px;
+    background-color: #000;
+    opacity: 0.9;
+    border: 1px solid #222;
+}
