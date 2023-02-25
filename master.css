@@ -3314,3 +3314,15 @@ h4 {
     opacity: 0.9;
     border: 1px solid #222;
 }
+@media (max-width: 768px) {
+    
+    #storyModal .modal-dialog{
+        margin: 0;
+    }
+    #storyModal .modal-header{
+        border-radius: 0;
+    }
+    #storyModal .carousel, #storyModal .modal-dialog,  #storyModal .modal-content,  #storyModal .modal-body,  #storyModal .carousel img,#storyModal .carousel-inner, #storyModal .carousel-item{
+        height: 100%;
+    } 
+}
