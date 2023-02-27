@@ -3278,25 +3278,32 @@ h4 {
     top: 0;
     margin-inline: 0%;
     width: 100%;
+    padding-inline: 86px;
 }
 #storyModal #carouselExampleIndicators{
-    padding-top: 16px;
+    padding-top: 12px;
+    padding-inline: 72px;
+}
+#storyModal .modal-body{
+    background-color: #111;
+    padding-inline: 0;
 }
 
 #storyModal .carousel-indicators button{
     flex: 1 0 auto;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 2px;
-    padding-block: 1px;
-    background: dodgerblue;
+    padding-block: 0px;
+    background: #fff;
+    opacity: 1;
 }
 #storyModal .carousel-indicators button.active ~ *{
-    background: transparent !important;
+    background: #ddd5
 }   
 #storyModal .carousel-item img{
     height: 600px;
     object-fit: cover;
-    width: 400px;
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -3311,6 +3318,33 @@ h4 {
     background-color: #000;
     opacity: 0.9;
     border: 1px solid #222;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item .icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 16px;
+}
+
+.carousel-item .icons *{
+    color: white;
+    fill: white;
+    opacity: 1;
+    margin-inline: 8px;
+    font-size: 32px;
+    cursor: pointer;;
+}
+.carousel-item .icons svg:last-of-type{
 }
 @media (max-width: 768px) {
     
