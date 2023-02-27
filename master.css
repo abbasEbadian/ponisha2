@@ -3250,6 +3250,9 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    .ampstart-navbar-trigger{
+        transform: translateY(-3px);
+    }
     #new-carousel-1 {
         min-height: 200px;
     }
@@ -3346,8 +3349,18 @@ h4 {
 }
 .carousel-item .icons svg:last-of-type{
 }
+@media (max-width: 640px) {
+    header{
+        height: 60px;
+    }
+    .ampstart-headerbar-title{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
 @media (max-width: 768px) {
-    
+   
     #storyModal .modal-dialog{
         margin: 0;
     }
