@@ -3225,21 +3225,7 @@ h4 {
 
 
 
-#new-carousel-1 {
-    max-width: 1290px;
-    margin-inline: auto;
-    min-height: 500px;
-}
-#new-carousel-1 .carousel-inner{
 
-}
-#new-carousel-1 .carousel-item img{
-    width: 100%;
-    object-fit: cover;
-    background-position: top;
-    object-position: top;
-    min-height: 680px;
-}
 [class^=carousel-control]{
     background: #5555;
     padding: 24px;
@@ -3358,6 +3344,12 @@ h4 {
         display: flex;
         align-items: center;
     }
+    #storyModal #carouselExampleIndicators {
+        padding-inline: 30px;
+    }
+    .land-see-post-title{
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 768px) {
    
@@ -3371,4 +3363,3 @@ h4 {
         height: 100%;
     } 
 }
-.embla {  overflow: hidden;}.embla__container {  display: flex;}.embla__slide {  flex: 0 0 100%;  min-width: 0;}

@@ -373,8 +373,8 @@ body {
 .land-see-category-teen:before {
     opacity: 0.98
 }
-.embla__slide {  flex: 0 0 107px; /* Slide covers 80% of the viewport */}
-.embla__slide a {
+.embla .embla__slide {  flex: 0 0 107px; /* Slide covers 80% of the viewport */}
+.embla  .embla__slide a {
 	display: block;
 	width: 77px;
 	height: 77px;
@@ -388,7 +388,7 @@ body {
 	-moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
 	-webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
 }
-.embla__slide a img{
+.embla .embla__slide a img{
     position: absolute !important;
     inset: 0;
     width: 100%;
@@ -424,4 +424,149 @@ body {
 }
 .embla .embla__prev > *{
     transform: rotate(180deg);
+}
+
+.embla2 {
+    max-width: 1290px;
+    margin-inline: auto;
+    min-height: 500px;
+}
+.embla2  .embla__slide {
+    margin-left: 16px;
+    position: relative;
+}
+.embla2  .embla__slide img{
+    width: 100%;
+    object-fit: cover;
+    background-position: top;
+    object-position: top;
+    min-height: 680px;
+}
+.embla__progress {
+    z-index: 1;
+    background-color: var(--background-site);
+    position: absolute;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    left: 0;
+    right: 0;
+    bottom: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    width: 21rem;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  .embla__progress__bar {
+    background-image: linear-gradient(
+      45deg,
+      var(--brand-primary),
+      var(--brand-secondary)
+    );
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+  }
+  
+.embla2 .embla__next{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: calc(50% - 16px);
+    left: 16px;
+    background: #fffc;
+    border: none;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 8px 2px #2222;
+}
+.embla2 .embla__prev{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: calc(50% - 16px);
+    right: 16px;
+    background: #fffc;
+    border: none;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 8px 2px #2222;
+}
+.embla2 .embla__prev > *{
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .ampstart-navbar-trigger{
+        transform: translateY(-3px);
+    }
+    .embla2 {
+        min-height: 200px;
+        max-height: 300px;
+    }
+    
+    body .embla2  img{
+        max-height: 300px;
+        min-height: 30px;
+    }
+    .embla2 .land-see-hero-button {
+        padding-block: 4px;
+    }
+    .embla2 .land-see-hero-typography{
+        bottom: 8px;
+        width: 80%;
+        left: 10%;
+        transform: scale(0.7);
+        margin-inline: auto;
+        color: white;
+        background-color: #fff8;
+        padding: 8px;
+        border-radius: 6px;
+    }   
+
+}
+
+.accordion .accordion-button{
+    background: #fef2f1;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+.accordion .accordion-button:focus{
+    border: none !important;
+    box-shadow: none;
+    background-color: #fef2f1;
+}
+.accordion .accordion-button::after{
+    margin: 0;
+    position: absolute;
+    right: 24px;
+}
+.accordion .accordion-item{
+    margin-bottom: 8px;
+}
+.embla3 {
+    padding-bottom: 64px;
+}
+.embla3 .embla__slide{
+}
+.embla3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+.embla {  overflow: hidden;}.embla__container {  display: flex;}.embla__slide {  flex: 0 0 100%;  min-width: 0;}
+.embla3 .embla__slide{
+    flex: 0 0 200px;
+    height: 200px;
+    margin-left: 16px;
+    font-size: 12px;
 }
