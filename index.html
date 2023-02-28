@@ -15,6 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text:400,600"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://allwomenstalk.com/","name":"All Women's Talk","description":"","publisher":{"@type":"Organization","name":"All Women's Talk","url":"https://allwomenstalk.com/","sameAs":["https://www.facebook.com/Allwomenstalk","https://www.instagram.com/allwomenstalk/","https://twitter.com/allwomenstalk"],"logo":{"@type":"ImageObject","url":"https://storage.googleapis.com/aws-static/icons/Icon60.png"}},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allwomenstalk.com/search/?q={search_term}"},"query-input":"required name=search_term"}}</script>
 </head>
@@ -740,7 +741,20 @@
     </footer>
     <!-- Modal -->
     <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModal" aria-hidden="true">
+        
         <div class="modal-dialog">
+            <div class="overlay d-none  d-flex align-items-center justify-center flex-column">
+                <button class=" close bg-transparent border-none  d-flex align-items-center justify-content-between text-white d-block w-75" onclick="close">
+                    بستن
+
+                    <span class="bi bi-x"></span>
+                </button>
+                <ul class="list-group w-75 p-0">
+                    <li class="list-group-item" role="button"><a class=" text-decoration-none w-100"href="https://telegram.org">تلگرام</a></li>
+                    <li class="list-group-item" role="button"><a class=" text-decoration-none w-100"href="https://wa.me">واتسپ</a></li>
+                    <li class="list-group-item" role="button"><a class=" text-decoration-none w-100"href="mailto:abbasebadiann@gmail.com">ایمیل</a></li>
+                  </ul>
+            </div>
             <div class="modal-content">
                 <div class="modal-header shadow-sm d-flex justify-content-between">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -751,7 +765,7 @@
                     </svg>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselExampleIndicators" class="carousel slide" dir="ltr" data-bs-wrap="false" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div id="carouselExampleIndicators" class="carousel slide" dir="ltr" data-bs-wrap="false" data-bs-pause="false">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -777,136 +791,73 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item ">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <div class="icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                        class="bi bi-send-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-pause" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
-                                    </svg>
+                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-pause" ></i>
+                                    <i class="bi bi-play d-none"></i>
                                 </div>
                                 <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
@@ -929,6 +880,7 @@
     </div>
 
     <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

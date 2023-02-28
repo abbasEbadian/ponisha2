@@ -588,3 +588,21 @@ body {
     opacity: 1;
     pointer-events: all;
 }
+.bi-send-fill{
+    transform: scale(0.7);
+}
+#storyModal .modal-dialog {
+    position: relative;
+}
+#storyModal .modal-dialog .overlay{
+    position: absolute;
+    background-color: #0008;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    z-index: 999999999;
+    pointer-events: all;
+}
+.list-group-item:hover{
+    background-color: #d7d7f8 !important;
+}
