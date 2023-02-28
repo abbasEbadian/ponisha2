@@ -8,78 +8,11 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async="" src="./lib/amp.js"></script>
     <link rel="stylesheet" href="./master.css">
+    <link rel="stylesheet" href="./lib/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
-    <style amp-boilerplate="">
-        body {
 
-            font-family: Dirooz;
-            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-moz-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-ms-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-o-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-    </style><noscript>
-        <style amp-boilerplate="">
-            body {
-                -webkit-animation: none;
-                -moz-animation: none;
-                -ms-animation: none;
-                animation: none
-            }
-        </style>
-    </noscript>
     <script custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" async=""></script>
     <script custom-element="amp-carousel" src="./lib/carousel.js" async=""></script>
     <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
@@ -92,317 +25,7 @@
     <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text:400,600"
         rel="stylesheet">
-    <style amp-custom="">
-        .ampstart-social-follow {
-            position: relative
-        }
 
-
-
-        .land-see-popular.land-see-post-item {
-            width: 198px;
-        }
-
-        .land-see-popular .land-see-post-title {
-            white-space: normal;
-            height: auto;
-        }
-
-        .logo {
-            width: 100%;
-            height: 28px;
-        }
-
-        .search-overlay {
-            overflow: hidden;
-            background-color: rgba(0, 0, 0, .9);
-            width: 100%;
-            height: 100%;
-            z-index: 5999997;
-            overflow: inherit;
-            opacity: 1;
-        }
-
-        .search-overlay .search-overlay-inner {
-            display: block;
-        }
-
-        .search-overlay-inner {
-            padding: 4.375rem 1.875rem 1.875rem;
-        }
-
-        .search-overlay-inner .search-overlay-close-button {
-            text-decoration: none;
-            transition: color .3s ease-in-out;
-            cursor: pointer;
-            float: right;
-            color: #7b7b7b;
-        }
-
-        .search-overlay-inner .search-overlay-close-button:hover {
-            color: #ffffff;
-        }
-
-        .search-overlay-form {
-            margin: 0 auto;
-            clear: both;
-        }
-
-        .search-overlay-form .search-input {
-            background: transparent;
-            border: 0;
-            outline: none;
-            padding: 0;
-            width: 100%;
-            box-sizing: content-box;
-            -webkit-appearance: none;
-        }
-
-        .search-overlay-form .search-input,
-        .search-overlay-form .search-input::placeholder {
-            letter-spacing: -.03rem;
-            font-weight: 400;
-            font-size: 3.5rem;
-            color: #f8f8f8;
-            text-transform: lowercase;
-            line-height: 4.6875rem;
-        }
-
-        .search-overlay-form .search-label {
-            display: inline-block;
-            width: 100%;
-            font-size: .875rem;
-            line-height: 1.4;
-            color: #7b7b7b;
-            border-top: .0625rem solid #fff;
-            padding-top: .5rem;
-        }
-
-        .page-header {
-            display: block;
-            height: auto;
-            text-align: center;
-            padding: 20px;
-            background: #e9328c;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: -4px;
-            font-weight: 700
-        }
-
-        @media (max-width:40.06rem) {
-            #header-sidebar .ampstart-social-follow {
-                margin-bottom: 200px
-            }
-        }
-
-        .btn {
-            cursor: pointer
-        }
-
-        .syndication-overlay {
-            -webkit-overflow-scrolling: touch;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .syndication-overlay amp-iframe {
-            margin-top: 3.5rem;
-        }
-
-        .syndication-overlay iframe {
-            width: 100%;
-            height: 100%;
-            border-width: 0;
-        }
-
-        .syndication-overlay-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background-color: #FFFFFF;
-        }
-
-        @media (min-width: 520px) {
-            .syndication-overlay-container {
-                max-width: 500px;
-                margin: 0 auto;
-                box-shadow: 0 0 20px -5px #000;
-                transition: opacity 0.1s ease-in;
-            }
-        }
-
-        #stories {
-            border-radius: 60px;
-        }
-
-        #stories a {
-            display: block;
-            width: 77px;
-            height: 77px;
-            position: relative;
-            overflow: hidden;
-            margin: 15px;
-            border-radius: 50%;
-            -moz-border-radius: 50%;
-            -webkit-border-radius: 50%;
-            box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
-            -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
-            -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
-        }
-
-        #stories a:hover {
-            box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
-            -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
-            -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
-        }
-
-        #stories a:visited {
-            box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
-            -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
-            -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
-        }
-
-        #stories .amp-carousel-button {
-            top: 50px;
-        }
-
-        .land-see-category-love:before {
-            opacity: 0.3
-        }
-
-        .land-see-category-hair:before {
-            opacity: 0.32
-        }
-
-        .land-see-category-makeup:before {
-            opacity: 0.34
-        }
-
-        .land-see-category-beauty:before {
-            opacity: 0.36
-        }
-
-        .land-see-category-skincare:before {
-            opacity: 0.38
-        }
-
-        .land-see-category-weightloss:before {
-            opacity: 0.4
-        }
-
-        .land-see-category-fashion:before {
-            opacity: 0.42
-        }
-
-        .land-see-category-lifestyle:before {
-            opacity: 0.44
-        }
-
-        .land-see-category-health:before {
-            opacity: 0.46
-        }
-
-        .land-see-category-fitness:before {
-            opacity: 0.49
-        }
-
-        .land-see-category-diy:before {
-            opacity: 0.51
-        }
-
-        .land-see-category-inspiration:before {
-            opacity: 0.53
-        }
-
-        .land-see-category-food:before {
-            opacity: 0.55
-        }
-
-        .land-see-category-diet:before {
-            opacity: 0.57
-        }
-
-        .land-see-category-funny:before {
-            opacity: 0.59
-        }
-
-        .land-see-category-music:before {
-            opacity: 0.61
-        }
-
-        .land-see-category-cooking:before {
-            opacity: 0.63
-        }
-
-        .land-see-category-nails:before {
-            opacity: 0.65
-        }
-
-        .land-see-category-apps:before {
-            opacity: 0.67
-        }
-
-        .land-see-category-money:before {
-            opacity: 0.69
-        }
-
-        .land-see-category-travel:before {
-            opacity: 0.71
-        }
-
-        .land-see-category-shoes:before {
-            opacity: 0.73
-        }
-
-        .land-see-category-movies:before {
-            opacity: 0.75
-        }
-
-        .land-see-category-books:before {
-            opacity: 0.77
-        }
-
-        .land-see-category-streetstyle:before {
-            opacity: 0.79
-        }
-
-        .land-see-category-bags:before {
-            opacity: 0.81
-        }
-
-        .land-see-category-celebs:before {
-            opacity: 0.84
-        }
-
-        .land-see-category-running:before {
-            opacity: 0.86
-        }
-
-        .land-see-category-perfumes:before {
-            opacity: 0.88
-        }
-
-        .land-see-category-jewelry:before {
-            opacity: 0.9
-        }
-
-        .land-see-category-wedding:before {
-            opacity: 0.92
-        }
-
-        .land-see-category-parenting:before {
-            opacity: 0.94
-        }
-
-        .land-see-category-gardening:before {
-            opacity: 0.96
-        }
-
-        .land-see-category-teen:before {
-            opacity: 0.98
-        }
-    </style>
     <script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
     <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async=""></script>
     <script custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" async=""></script>
@@ -412,7 +35,7 @@
 
 <body class="land-see">
     <!-- Start Navbar -->
-    <header class="ampstart-headerbar  justify-start items-center top-0 left-0 right-0">
+    <header class="ampstart-headerbar  justify-content-start align-items-center top-0 left-0 right-0">
         <div class="btn btn-primary text-dark border-0 position-fixed top-0 right-0 p-3 bg-white"
             data-bs-toggle="offcanvas" href="#header-sidebar" role="button" aria-controls="header-sidebar"
             style="background: #fff;">☰</div>
@@ -444,7 +67,7 @@
             </svg>
         </div>
         <nav class="xs-hide mx-auto">
-            <ul class="list-reset center m0 p2 flex justify-around nowrap">
+            <ul class="list-reset text-center m-0 p-2 d-flex justify-content-around nowrap">
                 <li class="ampstart-nav-item ps-2"><a href="https://food.allwomenstalk.com/"
                         class="text-decoration-none block">غذا</a></li>
                 <li class="ampstart-nav-item ps-2"><a href="https://inspiration.allwomenstalk.com/"
@@ -464,9 +87,7 @@
             </ul>
         </nav>
     </header>
-    <section class="land-see-hero-container mx-auto mb3 relative overflow-hidden">
-
-
+    <section class="land-see-hero-container mx-auto mb3 position-relative overflow-hidden">
         <div id="new-carousel-1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -474,14 +95,14 @@
                         alt="17 Effective 👏🏼 Tips for Concealing 🙈 Acne Scars for Self Conscious Girls 😔 ..."
                         width="400" height="400" layout="responsive"
                         src="./img/oyvqy1805d71e8d2a14db752088889_1080x1080.jpg"></img>
-                    <div class="land-see-hero-typography mx-auto center z2 absolute">
+                    <div class="land-see-hero-typography mx-auto text-center z2 absolute">
                         <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide"
                             href="https://skincare.allwomenstalk.com/"></a>
                         <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none"
                                 href="https://skincare.allwomenstalk.com/effective-tips-for-conealing-acne-scars/">17
                                 👏🏼 نکات موثر برای پنهان کردن 🙈 جای آکنه برای دختران خودآگاه 😔 ...</a>
                         </h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3"></p>
+                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt-1 mb3"></p>
                         <a class="land-see-hero-button text-decoration-none relative"
                             href="https://skincare.allwomenstalk.com/effective-tips-for-conealing-acne-scars/">ادامه</a>
                     </div>
@@ -489,12 +110,12 @@
                 <div class="carousel-item">
                     <img class="cover" alt="57 Hottest Women Celebrities ..." width="400" height="400"
                         layout="responsive" src="./img/h7kgpimm5d71e9c17ff34377442525_1080x1080.jpg"></img>
-                    <div class="land-see-hero-typography mx-auto center z2 absolute">
+                    <div class="land-see-hero-typography mx-auto text-center z2 absolute">
                         <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide"
                             href="https://celebs.allwomenstalk.com/"></a>
                         <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none"
                                 href="https://allwomenstalk.com/10-sexiest-women-celebrities/">57 زن مشهور ...</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3"></p>
+                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt-1 mb3"></p>
                         <a class="land-see-hero-button text-decoration-none relative"
                             href="https://allwomenstalk.com/10-sexiest-women-celebrities/">ادامه</a>
                     </div>
@@ -502,13 +123,13 @@
                 <div class="carousel-item">
                     <img class="cover" alt="7 Ways to Handle a Crush on a Co-worker ..." width="400" height="400"
                         layout="responsive" src="./img/lp9q350x5d71e92ac48ba173850425_979x979.jpg"></img>
-                    <div class="land-see-hero-typography mx-auto center z2 absolute">
+                    <div class="land-see-hero-typography mx-auto text-center z2 absolute">
                         <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide"
                             href="https://love.allwomenstalk.com/"></a>
                         <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none"
                                 href="https://allwomenstalk.com/7-ways-to-handle-a-crush-on-a-co-worker/">7 راه ابراز
                                 علاقه ...</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3"></p>
+                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt-1 mb3"></p>
                         <a class="land-see-hero-button text-decoration-none relative"
                             href="https://allwomenstalk.com/7-ways-to-handle-a-crush-on-a-co-worker/">ادامه</a>
                     </div>
@@ -517,13 +138,13 @@
                     <img class="cover land-see-hero-image land-see-cover-position-top"
                         alt="10 Signs That He&#039;s Just Not into You ..." width="400" height="400" layout="responsive"
                         src="./img/i0u8p95o5d71e8fec3305435576942_1080x1080.jpg"></img>
-                    <div class="land-see-hero-typography mx-auto center z2 absolute">
+                    <div class="land-see-hero-typography mx-auto text-center z2 absolute">
                         <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide"
                             href="https://love.allwomenstalk.com/"></a>
                         <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none"
                                 href="https://allwomenstalk.com/10-signs-that-hes-just-not-into-you/">10 نشانه که نشان
                                 می دهد او فقط به شما علاقه ندارد ...</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3"></p>
+                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt-1 mb3"></p>
                         <a class="land-see-hero-button text-decoration-none relative"
                             href="https://allwomenstalk.com/10-signs-that-hes-just-not-into-you/">ادامه</a>
                     </div>
@@ -540,181 +161,195 @@
         </div>
     </section>
 
-    <section class="land-see-recent-content relative mx-auto py-4 px-2">
+    <section class="land-see-recent-content position-relative mx-auto py-4 px-2">
         <h4 class="land-see-section-header ml1">ریل ها</h4>
     </section>
     <section class="land-see-popular-content mx-auto">
-        <div class="clearfix pt2 " dir="ltr">
+        <div class="embla" >
+            <!-- <div class="embla__viewport"> -->
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover" alt="7 Healthiest Dark Chocolate Bars ..." media="" width="150"
+                                    height="150" layout="fill"
+                                    src="./img/js9953sf5d6eb9a9b1f61967369890_1080x1080.jpg"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover"
+                                    alt="7 Tips on Dealing with Your Feelings 💔when Your Ex Moves on ➡️ ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/ibtxn2ia5d6eb575c02c7275189905_1080x1080.jpg"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover" alt="Do Women in Great Relationships Cheat?" media="" width="150"
+                                    height="150" layout="fill"
+                                    src="./img/erqzbmf85d6eb59bbfe0a293130124_979x979.jpg"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover"
+                                    alt="7 Important Things to do when Someone You Love Disrespects You ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/ib2bfxei5d6eb61a2dce0279381801_1080x1080.jpg?width=400&amp;height=400"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover" alt="9 Best Foods to Eat after a Cardio Session ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/hqsm31si5d6eb4459f09d931601857_1080x1080.jpg?width=400&amp;height=400"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover" alt="19 Fantastic Ways to Burn Fat Faster and Lose Weight ..."
+                                    media="" width="150" height="150" layout="fill"
+                                    src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg?width=400&amp;height=400"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <img class="cover"
+                                    alt="7 Tell-tale Signs It&#039;s Time to End Your Long Distance Relationship ..."
+                                    media="" width="150" height="150" layout="fill"
+                                    src="./img/g20mwho15d6ddbab5cff8766446515_979x979.jpg?width=400&amp;height=400"></img>
+                            </a>
+                        </div>
+                    </div>
 
-            <amp-carousel id="stories" media="" width="auto" height="107" layout="fixed-height" controls=""
-                type="carousel">
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                    role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/515ee06d0464286562758928/">
-                        <amp-img class="cover" alt="7 Healthiest Dark Chocolate Bars ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/js9953sf5d6eb9a9b1f61967369890_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="25 Flirty First Date Outfits to Set the Mood ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/eorhu7rk5d6eb05913b18149936342_1080x1080.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="10 Top Exercises for Losing Butt Fat Fast ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/z2j844lz5d6ddc1a53e10835307989_803x803.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover"
+                                    alt="7 Essential Qualities to Look for in Your Future Husband ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/en1u2z5k5d6ddd49bfecb980221587_718x718.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="42 Most Romantic Movies - Trailers and Reviews!" media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="9 Ways to Relieve Menstrual Pain ..." media="" width="150"
+                                    height="150" layout="fill"
+                                    src="./img/r8d7kav55d6eafbf0af1d567207597_1080x1080.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="9 Unforgettable Ideas for a Senior Trip ..." media=""
+                                    width="150" height="150" layout="fill"
+                                    src="./img/wcu5zsi65d6eac39c6a9d823186034_1080x1080.jpg?width=400&amp;height=400"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="embla__slide">
+                        <div data-bs-toggle="modal" data-bs-target="#storyModal" role="button" tabindex="0">
+                            <a class="text-decoration-none btn">
+                                <amp-img class="cover" alt="Short Girls Are the Best ..." media="" width="150"
+                                    height="150" layout="fill"
+                                    src="./img/w9kqs7v45d6fcc3f81f58263373342_1080x1080.jpg"></amp-img>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/4f869d169c8f030c67604a94/">
-                        <amp-img class="cover" alt="15 Easy DIY Wine Racks to Make ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/t1f0h38u5d6eb8d2d6817759207397_1080x1080.jpg"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/52f93219a46845ecf50a2d67/">
-                        <amp-img class="cover" alt="7 Tips on Dealing with Your Feelings 💔when Your Ex Moves on ➡️ ..."
-                            media="" width="400" height="400" layout="fill"
-                            src="./img/ibtxn2ia5d6eb575c02c7275189905_1080x1080.jpg?"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/4f3d84469d2f6889de3e23d2/">
-                        <amp-img class="cover" alt="Do Women in Great Relationships Cheat?" media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/erqzbmf85d6eb59bbfe0a293130124_979x979.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div odata-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/52e577ca7d124b5bdaa79cd0/">
-                        <amp-img class="cover" alt="7 Important Things to do when Someone You Love Disrespects You ..."
-                            media="" width="400" height="400" layout="fill"
-                            src="./img/ib2bfxei5d6eb61a2dce0279381801_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/52d725cb7d124b5bdaa78c9d/">
-                        <amp-img class="cover" alt="9 Best Foods to Eat after a Cardio Session ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/hqsm31si5d6eb4459f09d931601857_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/51bbe3d5d6fef90fc5a69ff2/">
-                        <amp-img class="cover" alt="19 Fantastic Ways to Burn Fat Faster and Lose Weight ..." media=""
-                            width="400" height="400" layout="fill"
-                            src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/5284e019d65908c77cf4133b/">
-                        <amp-img class="cover"
-                            alt="7 Tell-tale Signs It&#039;s Time to End Your Long Distance Relationship ..." media=""
-                            width="400" height="400" layout="fill"
-                            src="./img/g20mwho15d6ddbab5cff8766446515_979x979.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div odata-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/552bc15577f1343dc318e174/">
-                        <amp-img class="cover" alt="25 Flirty First Date Outfits to Set the Mood ..." media=""
-                            width="400" height="400" layout="fill"
-                            src="./img/eorhu7rk5d6eb05913b18149936342_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/4f3d84a79d2f6889de3e2aa7/">
-                        <amp-img class="cover" alt="10 Top Exercises for Losing Butt Fat Fast ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/z2j844lz5d6ddc1a53e10835307989_803x803.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/51edbf0837cf9c55c94a92ac/">
-                        <amp-img class="cover" alt="7 Essential Qualities to Look for in Your Future Husband ..."
-                            media="" width="400" height="400" layout="fill"
-                            src="./img/en1u2z5k5d6ddd49bfecb980221587_718x718.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/4f3d86469d2f6889de3e4663/">
-                        <amp-img class="cover" alt="42 Most Romantic Movies - Trailers and Reviews!" media=""
-                            width="400" height="400" layout="fill"
-                            src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div odata-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/4f3d86389d2f6889de3e4556/">
-                        <amp-img class="cover" alt="9 Ways to Relieve Menstrual Pain ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/r8d7kav55d6eafbf0af1d567207597_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/53345b69a46845ecf50a3566/">
-                        <amp-img class="cover" alt="9 Unforgettable Ideas for a Senior Trip ..." media="" width="400"
-                            height="400" layout="fill"
-                            src="./img/wcu5zsi65d6eac39c6a9d823186034_1080x1080.jpg?width=400&amp;height=400"></amp-img>
-                    </a>
-                </div>
-                <div data-bs-toggle="modal" data-bs-target="#storyModal"
-                role="button" tabindex="0" class="land-see-pre-animate land-see-reel-item">
-                    <a class="text-decoration-none btn" data-vars-event-action-stories="Story"
-                        data-vars-outbound-link="https://reel.allwomenstalk.com/story/5d6fcc538111877edc633d92/">
-                        <amp-img class="cover" alt="Short Girls Are the Best ..." media="" width="400" height="400"
-                            layout="fill" src="./img/w9kqs7v45d6fcc3f81f58263373342_1080x1080.jpg"></amp-img>
-                    </a>
-                </div>
-            </amp-carousel>
+            <!-- </div> -->
+            <button class="embla__prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+            </button>
+            <button class="embla__next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+            </button>
         </div>
+       
+
     </section>
-    <section class="land-see-recent-content relative mx-auto py-4">
+    <section class="land-see-recent-content position-relative mx-auto py-4">
         <h4 class="land-see-section-header ml-1 px-2">داستان های اخیر</h4>
     </section>
-    <section class="land-see-recent-content relative mx-auto py-4">
-        <div class="clearfix pt2">
+    <section class="land-see-recent-content position-relative mx-auto py-4">
+        <div class="clearfix pt-2">
 
-            <ul class="list-reset m-0 p-0 center justify-center fit">
+            <ul class="list-reset m-0 p-0 text-center justify-content-center w-100">
                 <li id="landSee-0"
-                    class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  land-see-post-featured ">
+                    class="px-1 mt-1 d-block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  land-see-post-featured ">
                     <a href="https://money.allwomenstalk.com/great-direct-sales-companies-to-help-mom-bring-in-extra-money/"
                         class="text-decoration-none" data-vars-event-action="Post"
                         data-vars-outbound-link="https://money.allwomenstalk.com/great-direct-sales-companies-to-help-mom-bring-in-extra-money/">
                         <amp-img class="cover" alt="7 Great Direct Sales Companies to Help Mom Bring in Extra Money ..."
                             media="" width="400" height="400" layout="responsive"
                             src="./img/ewdfhlgj5d71e85e5fa33455535891_1080x1080.jpg?width=800&amp;height=800"></amp-img></a>
-                    <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
+                    <a class="land-see-post-category land-see-page-navigation inline-block pt-1 underline caps"
                         data-vars-event-action="Post category" data-vars-outbound-link="money"
                         href="https://money.allwomenstalk.com/">ثروت</a>
-                    <h4 class="land-see-post-title ampstart-title-sm pt1">
+                    <h4 class="land-see-post-title ampstart-title-sm pt-1">
                         <a class="text-decoration-none"
                             href="https://money.allwomenstalk.com/great-direct-sales-companies-to-help-mom-bring-in-extra-money/"
                             data-vars-event-action="Post"
                             data-vars-outbound-link="https://money.allwomenstalk.com/great-direct-sales-companies-to-help-mom-bring-in-extra-money/">7
                             شرکت‌های فروش مستقیم بزرگ برای کمک به مادر برای آوردن پول اضافی...</a>
                     </h4>
-                    <p class="ampstart-caption pt1 pb3"></p>
+                    <p class="ampstart-caption pt-1 pb-3"></p>
                 </li>
                 <li id="landSee-0"
-                    class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  land-see-post-featured ">
+                    class="px-1 mt-1 d-block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  land-see-post-featured ">
                     <a href="https://food.allwomenstalk.com/protein-pancake-recipes-that-will-suit-any-diet-and-satisfy-any-craving/"
                         class="text-decoration-none" data-vars-event-action="Post"
                         data-vars-outbound-link="https://food.allwomenstalk.com/protein-pancake-recipes-that-will-suit-any-diet-and-satisfy-any-craving/">
@@ -722,10 +357,10 @@
                             alt="11 Protein Pancake Recipes That Will Suit Any Diet and Satisfy Any Craving ..."
                             media="" width="400" height="400" layout="responsive"
                             src="./img/okq72u2d5d71e80572416774170838_1080x1080.jpg?width=800&amp;height=800"></amp-img></a>
-                    <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
+                    <a class="land-see-post-category land-see-page-navigation inline-block pt-1 underline caps"
                         data-vars-event-action="Post category" data-vars-outbound-link="food"
                         href="https://food.allwomenstalk.com/">غذا</a>
-                    <h4 class="land-see-post-title ampstart-title-sm pt1">
+                    <h4 class="land-see-post-title ampstart-title-sm pt-1">
                         <a class="text-decoration-none"
                             href="https://food.allwomenstalk.com/protein-pancake-recipes-that-will-suit-any-diet-and-satisfy-any-craving/"
                             data-vars-event-action="Post"
@@ -733,54 +368,54 @@
                             دستور العمل های پنکیک پروتئینی که برای هر رژیم غذایی مناسب است و هر هوسی را برآورده می کند
                             ...</a>
                     </h4>
-                    <p class="ampstart-caption pt1 pb3"></p>
+                    <p class="ampstart-caption pt-1 pb-3"></p>
                 </li>
                 <li id="landSee-0"
-                    class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  col-6 ">
+                    class="px-1 mt-1 d-block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  col-6 ">
                     <a href="https://allwomenstalk.com/8-best-anti-acne-products-expert-reviews/"
                         class="text-decoration-none" data-vars-event-action="Post"
                         data-vars-outbound-link="https://allwomenstalk.com/8-best-anti-acne-products-expert-reviews/">
                         <amp-img class="cover" alt="8 Best anti-Acne Products - Expert Reviews ..." media="" width="400"
                             height="400" layout="responsive"
                             src="./img/rv4wvup05d71e74fcfd33974706463_1080x1080.jpg?width=800&amp;height=800"></amp-img></a>
-                    <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
+                    <a class="land-see-post-category land-see-page-navigation inline-block pt-1 underline caps"
                         data-vars-event-action="Post category" data-vars-outbound-link="beauty"
                         href="https://beauty.allwomenstalk.com/">زیبایی</a>
-                    <h4 class="land-see-post-title ampstart-title-sm pt1">
+                    <h4 class="land-see-post-title ampstart-title-sm pt-1">
                         <a class="text-decoration-none"
                             href="https://allwomenstalk.com/8-best-anti-acne-products-expert-reviews/"
                             data-vars-event-action="Post"
                             data-vars-outbound-link="https://allwomenstalk.com/8-best-anti-acne-products-expert-reviews/">8
                             بهترین محصولات ضد آکنه - نظرات کارشناسان...</a>
                     </h4>
-                    <p class="ampstart-caption pt1 pb3"></p>
+                    <p class="ampstart-caption pt-1 pb-3"></p>
                 </li>
                 <li id="landSee-0"
-                    class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  col-6 ">
+                    class="px-1 mt-1 d-block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col land-see-recent  col-6 ">
                     <a href="https://lifestyle.allwomenstalk.com/signs-of-a-selfish-person-that-you-should-pay-attention-to/"
                         class="text-decoration-none" data-vars-event-action="Post"
                         data-vars-outbound-link="https://lifestyle.allwomenstalk.com/signs-of-a-selfish-person-that-you-should-pay-attention-to/">
                         <amp-img class="cover" alt="7 Signs of a Selfish Person That You Should Pay Attention to ..."
                             media="" width="400" height="400" layout="responsive"
                             src="./img/rbjj6uxn5d71e77ddfa9a808547676_1080x1080.jpg?width=800&amp;height=800"></amp-img></a>
-                    <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps"
+                    <a class="land-see-post-category land-see-page-navigation inline-block pt-1 underline caps"
                         data-vars-event-action="Post category" data-vars-outbound-link="lifestyle"
                         href="https://lifestyle.allwomenstalk.com/">سبک زندگی</a>
-                    <h4 class="land-see-post-title ampstart-title-sm pt1">
+                    <h4 class="land-see-post-title ampstart-title-sm pt-1">
                         <a class="text-decoration-none"
                             href="https://lifestyle.allwomenstalk.com/signs-of-a-selfish-person-that-you-should-pay-attention-to/"
                             data-vars-event-action="Post"
                             data-vars-outbound-link="https://lifestyle.allwomenstalk.com/signs-of-a-selfish-person-that-you-should-pay-attention-to/">7
                             نشانه های یک فرد خودخواه که باید به آنها توجه کنید ...</a>
                     </h4>
-                    <p class="ampstart-caption pt1 pb3"></p>
+                    <p class="ampstart-caption pt-1 pb-3"></p>
                 </li>
             </ul>
         </div>
     </section>
 
 
-    <section class="land-see-story-categories center items-center">
+    <section class="land-see-story-categories text-center align-items-center">
         <amp-accordion layout="container" disable-session-states="">
             <section class="land-see-stories land-see-category-love">
                 <h3 class="max-width-4 mx-auto text-dark">عاشقانه</h3>
@@ -803,7 +438,7 @@
                                                 src="{{src}}"></amp-img>
                                             {{/image}}
                                         </a>
-                                        <h4 class="land-see-post-title ampstart-title-sm pt1"><a
+                                        <h4 class="land-see-post-title ampstart-title-sm pt-1"><a
                                                 class="text-decoration-none" href="{{post-url}}">{{post-title}}</a></h4>
                                     </div>
                                     {{/story-post}}
@@ -837,7 +472,7 @@
                                                 src="{{src}}"></amp-img>
                                             {{/image}}
                                         </a>
-                                        <h4 class="land-see-post-title ampstart-title-sm pt1"><a
+                                        <h4 class="land-see-post-title ampstart-title-sm pt-1"><a
                                                 class="text-decoration-none" href="{{post-url}}">{{post-title}}</a></h4>
                                     </div>
                                     {{/story-post}}
@@ -871,7 +506,7 @@
                                                 src="{{src}}"></amp-img>
                                             {{/image}}
                                         </a>
-                                        <h4 class="land-see-post-title ampstart-title-sm pt1"><a
+                                        <h4 class="land-see-post-title ampstart-title-sm pt-1"><a
                                                 class="text-decoration-none" href="{{post-url}}">{{post-title}}</a></h4>
                                     </div>
                                     {{/story-post}}
@@ -897,7 +532,7 @@
         <div class="offcanvas-body">
             <nav class="ampstart-sidebar-nav ampstart-nav">
                 <ul class="list-reset m-0 p-0 ampstart-label">
-                    <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
+                    <li class="ampstart-nav-item ampstart-nav-dropdown position-relative ">
                         <!-- Start Dropdown-inline -->
                         <ul class="ampstart-dropdown-items list-reset m-0 p-0">
 
@@ -1042,7 +677,8 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+            <ul
+                class="ampstart-social-follow list-reset d-flex justify-content-around align-items-center flex-wrap m-0 mb4">
                 <li>
                     <a href="https://twitter.com/allwomenstalk" target="_blank" class="inline-block p1"
                         aria-label="Link to AMP HTML Twitter">
@@ -1112,7 +748,8 @@
     </amp-lightbox>
     <amp-lightbox class="syndication-overlay" id="syndication-lb" layout="nodisplay" style="">
         <div class="syndication-overlay-container">
-            <header class="ampstart-headerbar flex relative justify-start items-center top-0 left-0 right-0">
+            <header
+                class="ampstart-headerbar d-flex position-relative justify-content-start align-items-center top-0 left-0 right-0">
                 <div role="button" aria-label="close syndication" on="tap:syndication-lb.close" tabindex="0"
                     class="ampstart-navbar-trigger ps-2 pl2 items-start">✕</div>
                 <a [href]="syndicationIframeSrc" target="_blank"
@@ -1131,8 +768,9 @@
     </amp-lightbox>
 
     <!-- Start Footer -->
-    <footer class="container ampstart-footer flex items-center mx-auto d-flex justify-content-between flex-wrap ">
-        <ul class=" pe-0  list-unstyled d-flex justify-content-start items-center  m-0 mb-lg-4 col-6">
+    <footer
+        class="container ampstart-footer d-flex align-items-center mx-auto d-flex justify-content-between flex-wrap ">
+        <ul class=" pe-0  list-unstyled d-flex justify-content-start align-items-center  m-0 mb-lg-4 col-6">
             <li>
                 <a href="https://twitter.com/allwomenstalk" target="_blank" class="inline-block p1"
                     aria-label="Link Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2"
@@ -1183,151 +821,201 @@
                     </svg></a>
             </li>
         </ul>
-        <a class="text-decoration-none text-start d-block col-6 ps-3 ps-lg-0" href="https://allwomenstalk.com/archive/">Archive</a>
-        
-       <div class="col-12 ps-3 ps-lg-0 mt-3 mt-lg-0 text-center text-lg-start">
-            <small dir="ltr" >
+        <a class="text-decoration-none text-start d-block col-6 ps-3 ps-lg-0"
+            href="https://allwomenstalk.com/archive/">Archive</a>
+
+        <div class="col-12 ps-3 ps-lg-0 mt-3 mt-lg-0 text-center text-lg-start">
+            <small dir="ltr">
                 @AllWomenTalk, 2023
             </small>
-       </div>
+        </div>
     </footer>
     <!-- Modal -->
-    <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModal" aria-hidden="true" >
+    <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header shadow-sm d-flex justify-content-between">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path class="ampstart-icon" fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                        <path class="ampstart-icon" fill="currentColor"
+                            d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
                         </path>
                     </svg>
                 </div>
                 <div class="modal-body">
                     <div id="carouselExampleIndicators" class="carousel slide" dir="ltr" data-bs-wrap="false">
                         <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                                aria-label="Slide 10"></button>
                         </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item active">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item ">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item ">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/a8pva9pb604fca1097d26393765003_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/bg5st9gq5d6e781acba6b744043963_1034x1034.jpg" class="d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                                  </svg>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
-                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg>
+                            <div class="carousel-item">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-pause" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
                             </div>
-                            <img src="./img/ca6fqa0t5d6eb33e68b40603612227_1080x1080.jpg" class="d-block" alt="...">
-                          </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -1336,6 +1024,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="./lib/embla.js"></script>
+    <script src="./lib/custom.js"></script>
+
 </body>
 
 </html>

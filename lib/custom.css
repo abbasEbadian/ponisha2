@@ -1,0 +1,427 @@
+body {
+
+    font-family: Dirooz;
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1, end) 0s 1 normal both
+}
+
+@-webkit-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-moz-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-ms-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-o-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+body {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none
+}
+
+.ampstart-social-follow {
+    position: relative
+}
+
+
+
+.land-see-popular.land-see-post-item {
+    width: 198px;
+}
+
+.land-see-popular .land-see-post-title {
+    white-space: normal;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 28px;
+}
+
+.search-overlay {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    z-index: 5999997;
+    overflow: inherit;
+    opacity: 1;
+}
+
+.search-overlay .search-overlay-inner {
+    display: block;
+}
+
+.search-overlay-inner {
+    padding: 4.375rem 1.875rem 1.875rem;
+}
+
+.search-overlay-inner .search-overlay-close-button {
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+    float: right;
+    color: #7b7b7b;
+}
+
+.search-overlay-inner .search-overlay-close-button:hover {
+    color: #ffffff;
+}
+
+.search-overlay-form {
+    margin: 0 auto;
+    clear: both;
+}
+
+.search-overlay-form .search-input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    box-sizing: content-box;
+    -webkit-appearance: none;
+}
+
+.search-overlay-form .search-input,
+.search-overlay-form .search-input::placeholder {
+    letter-spacing: -.03rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #f8f8f8;
+    text-transform: lowercase;
+    line-height: 4.6875rem;
+}
+
+.search-overlay-form .search-label {
+    display: inline-block;
+    width: 100%;
+    font-size: .875rem;
+    line-height: 1.4;
+    color: #7b7b7b;
+    border-top: .0625rem solid #fff;
+    padding-top: .5rem;
+}
+
+.page-header {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background: #e9328c;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    font-weight: 700
+}
+
+@media (max-width:40.06rem) {
+    #header-sidebar .ampstart-social-follow {
+        margin-bottom: 200px
+    }
+}
+
+.btn {
+    cursor: pointer
+}
+
+.syndication-overlay {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.syndication-overlay amp-iframe {
+    margin-top: 3.5rem;
+}
+
+.syndication-overlay iframe {
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+}
+
+.syndication-overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+@media (min-width: 520px) {
+    .syndication-overlay-container {
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 0 20px -5px #000;
+        transition: opacity 0.1s ease-in;
+    }
+}
+
+#stories {
+    border-radius: 60px;
+}
+
+#stories a {
+    display: block;
+    width: 77px;
+    height: 77px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+}
+
+#stories a:hover {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #4d90fe;
+}
+
+#stories a:visited {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #808080;
+}
+
+#stories .amp-carousel-button {
+    top: 50px;
+}
+
+.land-see-category-love:before {
+    opacity: 0.3
+}
+
+.land-see-category-hair:before {
+    opacity: 0.32
+}
+
+.land-see-category-makeup:before {
+    opacity: 0.34
+}
+
+.land-see-category-beauty:before {
+    opacity: 0.36
+}
+
+.land-see-category-skincare:before {
+    opacity: 0.38
+}
+
+.land-see-category-weightloss:before {
+    opacity: 0.4
+}
+
+.land-see-category-fashion:before {
+    opacity: 0.42
+}
+
+.land-see-category-lifestyle:before {
+    opacity: 0.44
+}
+
+.land-see-category-health:before {
+    opacity: 0.46
+}
+
+.land-see-category-fitness:before {
+    opacity: 0.49
+}
+
+.land-see-category-diy:before {
+    opacity: 0.51
+}
+
+.land-see-category-inspiration:before {
+    opacity: 0.53
+}
+
+.land-see-category-food:before {
+    opacity: 0.55
+}
+
+.land-see-category-diet:before {
+    opacity: 0.57
+}
+
+.land-see-category-funny:before {
+    opacity: 0.59
+}
+
+.land-see-category-music:before {
+    opacity: 0.61
+}
+
+.land-see-category-cooking:before {
+    opacity: 0.63
+}
+
+.land-see-category-nails:before {
+    opacity: 0.65
+}
+
+.land-see-category-apps:before {
+    opacity: 0.67
+}
+
+.land-see-category-money:before {
+    opacity: 0.69
+}
+
+.land-see-category-travel:before {
+    opacity: 0.71
+}
+
+.land-see-category-shoes:before {
+    opacity: 0.73
+}
+
+.land-see-category-movies:before {
+    opacity: 0.75
+}
+
+.land-see-category-books:before {
+    opacity: 0.77
+}
+
+.land-see-category-streetstyle:before {
+    opacity: 0.79
+}
+
+.land-see-category-bags:before {
+    opacity: 0.81
+}
+
+.land-see-category-celebs:before {
+    opacity: 0.84
+}
+
+.land-see-category-running:before {
+    opacity: 0.86
+}
+
+.land-see-category-perfumes:before {
+    opacity: 0.88
+}
+
+.land-see-category-jewelry:before {
+    opacity: 0.9
+}
+
+.land-see-category-wedding:before {
+    opacity: 0.92
+}
+
+.land-see-category-parenting:before {
+    opacity: 0.94
+}
+
+.land-see-category-gardening:before {
+    opacity: 0.96
+}
+
+.land-see-category-teen:before {
+    opacity: 0.98
+}
+.embla__slide {  flex: 0 0 107px; /* Slide covers 80% of the viewport */}
+.embla__slide a {
+	display: block;
+	width: 77px;
+	height: 77px;
+	position: relative;
+	overflow: hidden;
+	margin: 15px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+	-moz-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+	-webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0000ff;
+}
+.embla__slide a img{
+    position: absolute !important;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+.embla {
+    position: relative;
+    border-radius: 90px;
+}
+.embla .embla__next{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(107px / 2 - 16px);
+    left: 16px;
+    background: #fffc;
+    border: none;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+}
+.embla .embla__prev{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(107px / 2 - 16px);
+    right: 16px;
+    background: #fffc;
+    border: none;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+}
+.embla .embla__prev > *{
+    transform: rotate(180deg);
+}
